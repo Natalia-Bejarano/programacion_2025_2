@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UFT-8">
+    <title>
+        INICIO
+    </title>
+</head>
+<body>
+    <h1> Formulario</h1>
+    <form action="#" method="get">
+    <fieldset>
+        <legend>Información general</legend>
+        <div>
+            <label for="">Nombres:</label>
+            <input type="text"
+            name="nombre" 
+            placeholder="Ingrese su nombre completo" 
+            maxlength="60"
+            value="Pepito"
+            required>
+        </div>
+        <div>
+            <label for="">Contraseña:</label>
+            <input type="password" name="pwd">
+        </div>
+        <div>
+            <label for="">Email:</label>
+            <input type="email" name="Correo">
+        </div>
+        <div>
+            <label for="">Edad:</label>
+            <input type="number" 
+            name="Edad" 
+            value="18" 
+            min="14"
+            max="120">
+            <div>
+                <label for="">Fecha de Cumpleaños</label>
+                <input type="date" name="Cumpleanios">
+                <br>
+                <input type="datetime" name="CumpleaniosDos">
+                <input type="datetime-local" name="CumpleaniosTres">
+            </div>
+            <div>
+                <label for="">Color favorito</label>
+                <input type="color" name="Color favorito">
+            </div>
+            <div>
+                <label for="">Archivo:</label>
+                <input type="file" name="Archivo" multiple accept=".pdf">
+            </div>
+            <div>
+                <label for="">Hora:</label>
+                <input type="time" name="hORA" >
+            </div>
+            <div>
+                <label for="">Mes:</label>
+                <input type="month" name="mes" >
+            </div>
+            <div>
+                <label for="">Semana</label>
+                <input type="week" name="Semana" multiple accept=".pdf">
+            </div>
+            <div>
+                <label for="">Categoría:</label>
+                <label> 
+                    <input type="radio" name="catg" value="A"><!--RADIO= Campo de selección con única respuesta, se usa VALUE para definir un valor que se envía por este elemento-->
+                    Categoría A
+                </label>
+                <label>
+                    <input type="radio" name="catg" value="B" checked>
+                    Categoría B
+                </label>
+                <label>
+                    <input type="radio" name="catg" value="C">
+                    Categoría C
+                </label>
+            </div>
+            <div>
+                <label for="">Pasatiempos:</label>
+                <label>
+                    <input type="checkbox" name="PasatiempoA"><!--CHECKBOX = Múltiples opciones para seleccionar usada como atributo para definir el valor que se enviará por este elemento-->
+                    Opción 1
+                </label>
+                <label>
+                    <input type="checkbox" name="PasatiempoB" checked>
+                    Opción 2
+                </label>
+                <label>
+                    <input type="checkbox" name="PasatiempoC" checked>
+                    Opción 3
+                </label>
+
+            </div>
+            <div>
+                <label for="">Ciudad</label>
+                <select name="Ciudad">
+                    <option value="0">-Seleccione-</option>
+                    <option value="1">Tunja</option>
+                    <option value="2"> Duitama </option>
+                    <option value="3">Sogamoso</option><!--Lista desplegable de opciones, solo se puede elegir una-->
+                </select>
+            </div>
+            <div>
+                <label for="">Descripción:</label>
+                <textarea name="desc" cols="36" rows="6"></textarea>
+            </div>
+        </div>
+        <div>
+            <label> Formación: </label>
+            <select name="Formación" id="" multiple><!--Seleccion de varias opciones en una lista, se eligen 1 o más-->
+                <option value="1"> Complementario </option>
+            <option value="2"> Técnico </option>
+            <option value="3"> Tecnólogo </option>
+            <option value="4"> Especialización</option>
+            </select>
+        </div>
+    </fieldset>
+    <div>
+        <input type="button" value="Botón">
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+        <br>
+        <button type="button">boton</button> <!--Sin función por default-->
+        <button type="reset">Borrar</button> <!-- Borra completamente el formulario y reestablece todos los campos de entrada de datos a sus valores por default-->
+        <button type="submit">Enviar</button> <!--Enviar el formulario -->
+    </div>
+    
+    
+
+    </form>
+</body>
+</html>

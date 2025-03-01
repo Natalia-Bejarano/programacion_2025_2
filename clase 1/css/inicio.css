@@ -36,5 +36,81 @@ h1{
     border-color: rgba(150,0, 250, 0.5);
     border-style:dashed;
     border: 5px solid red;
+    border-radius: 16px;
+    border-left-color: #00f;
+    border-bottom-style: dashed;
+    border-top-color:aquamarine;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-right-color: #000000;
+}
+.bg{
+    border: 1px solid #000000;
+    margin: 16px; /*todo */
+    margin: 16px 25px; /*iq derecha ariba abajo */
+    margin: 16px 20px 24px 28px; /*todo */
+    margin-block: 50px; /*SOLO PARTE DE ARIBA O PARTE DE ABAJO */
+    margin-top: 60px; /*parte arriba*/
+    margin-bottom: 40px; /*parte abajo */
+    margin-block-start: 60px; /*margin top*/
+    margin-block-end: 40px; /*margin buttom, de manera ind */
+    margin-inline: 20px;/*solo izq y derecha */
+    margin-left: 15px; /* izquierda*/
+    margin-right: 25px; /*todo */
+    margin-inline-start: 15px; /*margin left */
+    margin-inline-end: 25px; /*margin right */
+    /*line lateral */
+    padding: 32px; /*lo mismo que el margin, se aplica a todo el contorno interno */
+    /*padding margen interna */
+    width: 60vw;
+    height: 60vh;
+    background-color: #00f;
+    background-image: url('../recursos/gumball.avif');
+    background-size:contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: 10px 25px; primero horizontal y segundo vertical*/
+    box-shadow: 1px -6px 10px 6px #000000;/*Sombra caja de txt, 1 izq derech, 2 posicionamiento vertical, difuminacion, grosor sombra, color*/
+}
+.boton{
+    width: 150px;
+    height: 80px;
+    background-color: #00f;
+    color: #fff;
+    transition-property: background-color, color, width;
+    transition-duration: 2s, 3s, 500ms;
+    transition-timing-function: linear;
+    transition-delay: 1s, 0s, 0s;
 
+}
+.boton:hover{
+    width: 250px;
+    background-color: #fff;
+    color: #000000;
+}
+
+.c1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #00f;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    animation-name: animacion1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+@keyframes animacion1{
+    from{
+        left: 0px;
+        background-color: #00f;
+    }
+    to{
+        left: 100vw;
+        background-color: #ff0000;
+    }
 }

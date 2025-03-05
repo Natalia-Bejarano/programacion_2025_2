@@ -100,17 +100,30 @@ h1{
     left: 0px;
     animation-name: animacion1;
     animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 5;
-    animation-direction: alternate;
+    animation-timing-function: linear; /*VELOCIDAD: agrega una funcion donde permite determinar la velocidad de la animacion*/
+    animation-iteration-count: 5;/*NUMERO DE VECES QUE SE VA A REPETIR LA ANIMACION*/
+    animation-direction: alternate; /*Alternate: cuando llegue al borde se devuelve en pantalla, que pase por los mismos estados en vez de hacer un saltyo hasta la posicion 0*/
 }
 @keyframes animacion1{
-    from{
-        left: 0px;
+    100%{
+        left: 0px;/*Un desplazamiento desde la izquierda, posicion inicial, con azul, y al final, irá al 100 de lo que vale la pantalla, con porc, pq desconocemos el tamaño de la pantalla (%) vw=100%, a color rojo*/
         background-color: #00f;
     }
-    to{
+    25%{
+        top: 300px;
+    }
+    50%{
+        border-radius: 0px;
+        box-shadow: 1px 1px 5px 10px #000000;
+    }
+    75%{
+        height: 300px;
+    }
+    100%{
         left: 100vw;
         background-color: #ff0000;
+
     }
+
+   
 }

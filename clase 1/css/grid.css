@@ -1,0 +1,48 @@
+.grid-content {
+
+        width: 60vw;
+        height: 80vh;
+        margin: auto;
+        margin-bottom: 10vh;
+        border: 2px solid #000000;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%; /*tamaño de las columnas*/
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: "nav header header header"
+        "nav section section div"
+        "nav section section ."
+        "nav section section footer";/*cada elemento cuantas col o celdas va a ocupar ""filas entre cada comilla celda. . es que estará vacía*/
+        row-gap: 20px;/*espacio entre filas*/
+        column-gap: 10px; /*espacio entre columnas*/
+        gap: 5px;
+    }       
+.grid-content header{
+    grid-area: header;
+    background-color: #ff0000;
+    width: 100%;
+    height: 100%;
+}
+.grid-content nav{
+    grid-area: nav;
+    background-color: #ff7700;
+    width: 100%;
+    height: 100%;
+}
+.grid-content section{
+    grid-area: section;
+    background-color: #49b215;
+    width: 100%;
+    height: 100%;
+}
+.grid-content div{
+    grid-area: div;
+    background-color: #fff000;
+    width: 100%;
+    height: 100%;
+}
+.grid-content footer{
+    grid-area: footer;
+    background-color: #ff00cc;
+    width: 100%;
+    height: 100%;
+}
